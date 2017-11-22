@@ -1,0 +1,250 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    ViewBag.PageId = 1;
+}
+
+<div class="top-page-header">
+
+    <div class="page-title">
+        <h2>Resumen de estadisticas</h2>
+        <small>Sinest dashboard.</small>
+    </div>
+    
+</div>
+
+@* Final del Header *@
+
+<div class="row">
+
+    <div class="col-md-3">
+
+        <div class="widget">
+            <div class="widget-content bg-white">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3 class="counter font-bold font-size-38">231</h3>
+                    </div>
+                    <div class="col-xs-6">
+                        <p class="font-size-38"><span class="icon-people pull-right"></span></p>
+                    </div>
+                </div>
+                <p>Users Registered</p>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="74" style="width: 74%;" aria-valuenow="74"></div>
+                </div>
+                <a href="#" class="padding-8 hvr-bounce-to-right bg-green" style="width:100%;">Read full report <i class="fa fa-arrow-circle-right"></i></a>
+            </div><!--/widget-content-->
+        </div><!--/widget-->
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="widget">
+            <div class="widget-content bg-white">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3 class="counter font-bold font-size-38">60</h3>
+                    </div>
+                    <div class="col-xs-6">
+                        <p class="font-size-38"><span class="icon-user-follow pull-right"></span></p>
+                    </div>
+                </div>
+                <p>Subscribers Request</p>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-green-sea" role="progressbar" data-transitiongoal="57" style="width: 57%;" aria-valuenow="57"></div>
+                </div>
+                <a href="#" class="padding-8 hvr-bounce-to-right bg-green-sea" style="width:100%;">Read full report <i class="fa fa-arrow-circle-right"></i></a>
+            </div><!--/widget-content-->
+        </div><!--/widget-->
+
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="widget">
+            <div class="widget-content bg-white">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3 class="counter font-bold font-size-38">84</h3>
+                    </div>
+                    <div class="col-xs-6">
+                        <p class="font-size-38"><span class="icon-book-open pull-right"></span></p>
+                    </div>
+                </div>
+                <p>Orders</p>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-sun-flower" role="progressbar" data-transitiongoal="90" style="width: 90%;" aria-valuenow="90"></div>
+                </div>
+                <a href="#" class="padding-8 hvr-bounce-to-right bg-sun-flower" style="width:100%;">Read full report <i class="fa fa-arrow-circle-right"></i></a>
+            </div><!--/widget-content-->
+        </div><!--/widget-->
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="widget">
+            <div class="widget-content bg-white">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3 class="counter font-bold font-size-38">341</h3>
+                    </div>
+                    <div class="col-xs-6">
+                        <p class="font-size-38"><span class="icon-basket-loaded pull-right"></span></p>
+                    </div>
+                </div>
+                <p>Sales</p>
+                <div class="progress progress-xs">
+                    <div class="progress-bar bg-alizarin" role="progressbar" data-transitiongoal="45" style="width: 45%;" aria-valuenow="45"></div>
+                </div>
+                <a href="#" class="padding-8 hvr-bounce-to-right bg-alizarin" style="width:100%;">Read full report <i class="fa fa-arrow-circle-right"></i></a>
+            </div><!--/widget-content-->
+        </div><!--/widget-->
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="widget">
+            <div class="widget-header bg-white">
+                <h3 class="fg-gray">RESUMEN DE TRANSACCIONES</h3>
+
+                <div class="daterange daterange-text add-date-ranges pull-right" id="daterange-4" data-format="MMMM D, YYYY" data-start-date="February 19, 2015" data-end-date="March 19, 2015" style="    margin-top: -24px;">
+                    <i class="fa fa-calendar"></i>
+                    <span>March 3, 2017 - April 1, 2017</span>
+                </div>
+            </div>
+            <div class="widget-content bg-white">
+
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <div class="chart-widget">
+                            <div class="chart-widget-content wow zoomIn animated" id="transaction-summary" style="padding: 0px; position: relative; visibility: visible; animation-name: zoomIn;"><canvas class="flot-base" width="673" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 673px; height: 300px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"></div></div><canvas class="flot-overlay" width="673" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 673px; height: 300px;"></canvas></div>
+                        </div>
+                        <div class="row" style="border-top:1px solid #eee;">
+                            <div style="margin-top:10px;">
+                                <div class="col-md-4 mobile-text-center">
+                                    <span>Total Sessions</span>
+                                    <h2 class="counter">231,809</h2>
+                                    <span class="widget-total-sessions graph" style="height: 160px;"><canvas width="198" height="40" style="display: inline-block; width: 198px; height: 40px; vertical-align: top;"></canvas></span>
+                                </div><!--/.col-md-4-->
+                                <div class="col-md-4 mobile-text-center">
+                                    <span>Total Revenue</span>
+                                    <h2>$<span class="counter">231,809</span></h2>
+                                    <span class="widget-total-revenue graph" style="height: 160px;"><canvas width="200" height="40" style="display: inline-block; width: 200px; height: 40px; vertical-align: top;"></canvas></span>
+                                </div><!--/.col-md-4-->
+                                <div class="col-md-4 mobile-text-center">
+                                    <span>Speed Sessions</span>
+                                    <h2><span class="counter">90</span>%</h2>
+                                    <span class="widget-speed-sessions graph" style="height: 160px;"><canvas width="200" height="40" style="display: inline-block; width: 200px; height: 40px; vertical-align: top;"></canvas></span>
+                                </div><!--/.col-md-4-->
+                            </div>
+
+                        </div>
+
+                    </div><!--/.col-md-8-->
+
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div>
+                            <div class="top-profile-heading">
+                                <h3>Top Profiles</h3>
+
+                                <div class="clearfix"></div>
+                            </div><!--/.c_title-->
+
+                            <div class="top-profiles-wrapper" tabindex="5009" style="overflow: hidden; outline: none;">
+
+                                <ul class="list-unstyled top_profiles">
+                                    <li class="media event">
+
+                                        <div class="pull-left thumbnail-hover margin-left-28">
+                                            <div class="overflow-hidden">
+                                                <img src="../../assets/images/users/img3.jpg" width="80" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="title" href="#">Jane Dane</a>
+                                            <p><strong>$2300. </strong> Agent Avarage Sales </p>
+                                            <p>
+                                                <small>12 Sales Today</small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="media event">
+
+                                        <div class="pull-left thumbnail-hover margin-left-28">
+                                            <div class="overflow-hidden">
+                                                <img src="../../assets/images/users/img2.jpg" width="80" alt="image">
+                                            </div>
+                                        </div>
+
+                                        <div class="media-body">
+                                            <a class="title" href="#">John Doe</a>
+                                            <p><strong>$2300. </strong> Agent Avarage Sales </p>
+                                            <p>
+                                                <small>12 Sales Today</small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="media event">
+                                        <div class="pull-left thumbnail-hover margin-left-28">
+                                            <div class="overflow-hidden">
+                                                <img src="../../assets/images/users/img2.jpg" width="80" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="title" href="#">John Doe</a>
+                                            <p><strong>$2300. </strong> Agent Avarage Sales </p>
+                                            <p>
+                                                <small>12 Sales Today</small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="media event">
+                                        <div class="pull-left thumbnail-hover margin-left-28">
+                                            <div class="overflow-hidden">
+                                                <img src="../../assets/images/users/img3.jpg" width="80" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="title" href="#">Jane Dane</a>
+                                            <p><strong>$2300. </strong> Agent Avarage Sales </p>
+                                            <p>
+                                                <small>12 Sales Today</small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="media event">
+                                        <div class="pull-left thumbnail-hover margin-left-28">
+                                            <div class="overflow-hidden">
+                                                <img src="../../assets/images/users/img3.jpg" width="80" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="title" href="#">John Doe</a>
+                                            <p><strong>$2300. </strong> Agent Avarage Sales </p>
+                                            <p>
+                                                <small>12 Sales Today</small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div><!--/.top-profiles-wrapper-->
+
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                </div><!--/row-->
+
+            </div><!--/widget-content-->
+        </div><!--/widget-->
+
+    </div><!--/.col-md-12-->
+</div>

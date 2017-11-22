@@ -1,0 +1,60 @@
+﻿@model SINEST.Models.ViewModels.ModuleViewModel
+
+@{
+    ViewBag.Title = "Nuevo Modulo";
+}
+
+@using (Html.BeginForm("New", "Modules", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="c_panel viewHeader">
+        <div class="c_title bg-info">
+            <h2><span class="font-bold">Nuevo Modulo del Sistema</span> <small class="fg-white"></small></h2>
+            <div class="clearfix"></div>
+        </div>
+        <div id="actionsBar">
+            <button type="submit" class="btn-save btn btn-info btn-flat">Guardar</button>
+            <a class="btn btn-warning btn-flat btn-return" href="@Url.Action("Index","Modules")">Regresar</a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="c_panel">
+        <div class="c_content">
+
+            <div class="form-group">
+                <label for="Name" class="col-sm-2 control-label">Nombre * :</label>
+                <div class="col-sm-10">
+                    <input type="text" value="@Model.Name" class="form-control" id="name" name="Name" placeholder="Nombre" required>
+                    <div class="error-msg">
+                        @Html.ValidationMessageFor(m => m.Name)
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Icon" class="col-sm-2 control-label">Icono * :</label>
+                <div class="col-sm-10">
+                    <input type="text" value="@Model.Icon" class="form-control" id="icon" name="Icon" placeholder='<span class="fa fa-home"></span>' required>
+                    <div class="error-msg">
+                        @Html.ValidationMessageFor(m => m.Icon)
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Order" class="col-sm-2 control-label">Orden :</label>
+                <div class="col-sm-10">
+                    <input type="number" value="@Model.Order" class="form-control" id="order" name="Order" placeholder="Orden muestra menu">
+                    <div class="error-msg">
+                        @Html.ValidationMessageFor(m => m.Order)
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

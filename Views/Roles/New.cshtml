@@ -1,0 +1,41 @@
+﻿@model SINEST.Models.ViewModels.RolViewModel
+
+@{
+    ViewBag.Title = "Nuevo Rol";
+}
+
+@using (Html.BeginForm("New", "Roles", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="c_panel viewHeader">
+        <div class="c_title bg-info">
+            <h2><span class="font-bold">Nuevo Rol del Sistema</span> <small class="fg-white"></small></h2>
+            <div class="clearfix"></div>
+        </div>
+        <div id="actionsBar">
+            <button type="submit" class="btn-save btn btn-info btn-flat">Guardar</button>
+            <a class="btn btn-warning btn-flat btn-return" href="@Url.Action("Index","Roles")">Regresar</a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="c_panel">
+        <div class="c_content">
+
+            <div class="form-group">
+                <label for="Name" class="col-sm-2 control-label">Nombre * :</label>
+                <div class="col-sm-10">
+                    <input type="text" value="@Model.Name" class="form-control" id="name" name="Name" placeholder="Nombre" required>
+                    <div class="error-msg">
+                        @Html.ValidationMessageFor(m => m.Name)
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

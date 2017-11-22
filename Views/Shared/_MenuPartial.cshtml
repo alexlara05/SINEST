@@ -1,0 +1,63 @@
+﻿@model SINEST.ViewModels.MenuViewModel
+
+<div class="leftside-navigation leftside-navigation-scroll" tabindex="5000" style="overflow: hidden; outline: none;">
+    <ul class="sidebar-menu" id="nav-accordion">
+        <li class="sidebar-profile">
+
+            <div class="profile-main">
+                <p class="image">
+                    <img alt="image" src="~/Content/images/google-logo.png" style="height: 50px;width: auto;">
+                </p>
+                <p>
+                    <span class="name">Master Training Center</span><br>
+                    <span class="position" style="font-family: monospace;">
+                        @if (Session["LoggedUserRoleName"] != null)
+                        {
+                            @Session["LoggedUserRoleName"].ToString()
+                        }
+                    </span>
+                </p>
+            </div>
+
+        </li>
+        <li class="../index.html">
+            <a href="#" class="hvr-bounce-to-right-sidebar-parent">
+                <span class="icon-sidebar fa fa-home fa-2x"></span>
+                <span>Dashboard</span>
+            </a> 
+        </li>
+
+        @if (Model.Modules != null)
+        {
+            foreach (var modulo in Model.Modules)
+            {
+                var programas = Model.Programs.Where(p => p.ModuleId.Equals(modulo.Id));
+
+                if (programas.Count() > 0)
+                {
+                    <li class="sub-menu dcjq-parent-li">
+                        <a href="#" class="hvr-bounce-to-right-sidebar-parent">
+                            @Html.Raw(modulo.Icon)
+                            <span>@modulo.Name</span><span class="fa dcjq-icon"></span>
+                        </a>
+                        <ul class="sub" style="display: none;">
+                            @foreach (var programa in programas)
+                            {
+                                <li>
+                                    <a href='@programa.LinkUrl'>@programa.Name</a>
+                                </li>
+                            }
+                        </ul>
+                    </li>
+
+                    <div id="ascrail2000"
+                         class="nicescroll-rails" style="width: 3px; z-index: auto; cursor: default; position: absolute; top: -18px; left: 237px; height: 358px; opacity: 0; display: block;">
+                        <div style="position: relative; top: 0px; float: right; width: 3px; height: 142px; background-color: rgba(76, 81, 86, 0.2); border: 0px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px;">
+                        </div>
+                    </div>            
+                }
+            }
+        }
+        </ul>
+        </div>
+

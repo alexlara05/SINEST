@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="#">
+    <title>@ViewBag.Title - Sinest</title>
+
+    <!-- Start Global plugin css -->
+    <link href="~/Content/css/global-plugins.css" rel="stylesheet">
+    <link href="~/Content/vendors/jquery-icheck/skins/all.css" rel="stylesheet" />
+    <link href="~/Content/css/theme.css" rel="stylesheet" />
+
+    <link href="~/Content/css/style-responsive.css" rel="stylesheet" />
+    <link href="~/Content/css/class-helpers.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="~/Content/fonts/Indie-Flower/indie-flower.css" rel="stylesheet" />
+    <link href="~/Content/fonts/Open-Sans/open-sans8a7c.css?family=Open+Sans:300,400,700" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet" />
+</head>
+
+<body id="default-scheme">
+
+    <section id="container">
+
+        <!--header start-->
+        <header class="header fixed-top clearfix">
+
+            <!--logo start-->
+            <div class="brand">
+                <a href="/" class="logo">
+                    <img src="~/Content/images/logo_sinest_dark.png" width="130" alt="Logo Sinest" title="Sistema Institucional Estudiantíl" />
+                </a>
+                <div class="sidebar-toggle-box">
+                    <div class="fa fa-bars"></div>
+                </div>
+            </div>
+            <!--logo end-->
+            <!--
+                *****************************
+                ** Start of top navigation **
+                *****************************
+             -->
+            <div class="top-nav">
+
+                <ul class="nav navbar-nav navbar-left" style="margin-left:30px;">
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                            <span class=" fa fa-angle-down" style="font-size:12px;"></span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInUp pull-right">
+                            <li>
+                                <a href="javascript:void(0);" class="hvr-bounce-to-right">  Submenu 1</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="hvr-bounce-to-right">
+                                    <span class="badge bg-red pull-right">20%</span>
+                                    <span>Submenu 2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="hvr-bounce-to-right">Submenu 3</a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="hvr-bounce-to-right">Submenu 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="search-box">
+                        <input type="text" class="form-control search" placeholder=" Buscar...">
+                    </li>
+                    <li role="presentation" class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                            <span class="fa fa-bell-o" style="font-size:22.9px;"></span>
+                            <span class="badge bg-color label-danger">6</span>
+                        </a>
+                        <ul id="menu" class="dropdown-menu list-unstyled msg_list animated fadeInUp" role="menu">
+                            <li>
+                                <a class="hvr-bounce-to-right">
+                                    <span class="image">
+                                        <img src="~/Content/images/profile.jpg" alt="Profile Image" />
+                                    </span>
+                                    <span>
+                                        <span>John Smith</span>
+                                        <span class="time">3 mins ago</span>
+                                    </span>
+                                    <span class="message">
+                                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="hvr-bounce-to-right">
+                                    <span class="image">
+                                        <img src="~/Content/images/profile.jpg" alt="Profile Image" />
+                                    </span>
+                                    <span>
+                                        <span>John Smith</span>
+                                        <span class="time">3 mins ago</span>
+                                    </span>
+                                    <span class="message">
+                                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="hvr-bounce-to-right">
+                                    <span class="image">
+                                        <img src="~/Content/images/profile.jpg" alt="Profile Image" />
+                                    </span>
+                                    <span>
+                                        <span>John Smith</span>
+                                        <span class="time">3 mins ago</span>
+                                    </span>
+                                    <span class="message">
+                                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="hvr-bounce-to-right">
+                                    <span class="image">
+                                        <img src="~/Content/images/profile.jpg" alt="Profile Image" />
+                                    </span>
+                                    <span>
+                                        <span>John Smith</span>
+                                        <span class="time">3 mins ago</span>
+                                    </span>
+                                    <span class="message">
+                                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                                    </span>
+                                </a>
+                            </li>
+                            <li class='top-nav-li-see-all-alerts'>
+                                <div class="text-center">
+                                    <a href="inbox.html">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <img src="~/Content/images/profile.jpg" alt="image">
+                            @if (Session["LoggedUserFullName"] != null)
+                            {
+                                @Session["LoggedUserFullName"].ToString()
+                            }
+                            <span class=" fa fa-angle-down"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu animated fadeInUp pull-right">
+                            <li>
+                                <a href="app-pages/page-profile-dashboard.html" class="hvr-bounce-to-right">  Mi Perfíl</a>
+                            </li>
+                            <li>
+                                <a href="app-pages/page-profile-settings.html" class="hvr-bounce-to-right">
+                                    <span class="badge bg-red pull-right">50%</span>
+                                    <span>Ajustes</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="hvr-bounce-to-right">Ayuda</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Logout", "Login")" class="hvr-bounce-to-right"><i class="icon-login pull-right"></i> Salir</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!--
+                *****************************
+                *** End of top navigation ***
+                *****************************
+             -->
+
+        </header>    <!--header end-->
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse md-box-shadowed">
+                <!-- sidebar menu start-->
+                @Html.Action("Index", "Menu")
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+        <section id="main-content">
+
+            <section class="wrapper">
+                @RenderBody()
+            </section>
+
+        </section>
+        <!--======== Main Content End ========-->
+
+    </section>
+    <!--/.container-->
+    <!--===== Footer Start ========-->
+
+    <script src="~/Content/js/global-plugins.js"></script>
+
+    <!--common script init for all pages-->
+    <script src="~/Content/js/theme.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            new WOW().init();
+
+            App.initPage();
+            App.initLeftSideBar();
+            App.initCounter();
+            App.initNiceScroll();
+            App.initPanels();
+            App.initProgressBar();
+            App.initSlimScroll();
+            App.initNotific8();
+            App.initTooltipster();
+            App.initStyleSwitcher();
+            App.initMenuSelected();
+            App.initRightSideBar();
+            App.initEmail();
+            App.initSummernote();
+            App.initAccordion();
+            App.initModal();
+            App.initPopover();
+            App.initOwlCarousel();
+            App.initWidgets();
+        });
+
+        $('.radioDtt').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue'
+        });
+
+        var table = $('.datatable').DataTable({
+            "order": [[0, "desc"]]
+        });
+
+        $('.datatable tbody').on('click', 'tr', function () {
+
+            var radioDtt = $(this).find("td").eq(1).find('.radioDtt');
+            var radioDttParent = $(this).find("td").eq(1).find('.radioDtt').parent();
+
+            if ($(this).hasClass('selected')) {
+                $(this).removeClass('selected');               
+                radioDtt.attr('checked', false);
+                radioDttParent.removeClass('checked');
+            }
+            else {
+                var trSelected = table.$('tr.selected');
+                trSelected.find("td").eq(1).children().removeClass('checked');
+                trSelected.find("td").eq(1).find('.radioDtt').attr('checked', false);
+                trSelected.removeClass('selected');
+                
+                $(this).addClass('selected');
+                radioDtt.attr('checked', true);
+                radioDttParent.addClass('checked');
+            }
+        });
+
+        $('.iCheck-helper').click(function () {
+            $(this).parent().click();
+        });
+
+    </script>
+    @RenderSection("scripts", required: false)
+
+</body>
+
+</html>
+
+<!--===== Footer End ========-->

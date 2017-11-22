@@ -1,0 +1,78 @@
+﻿@model IEnumerable<SINEST.Models.ViewModels.ModuleViewModel>
+
+@{
+    ViewBag.Title = "Modulos del Sistema";
+}
+<div class="c_panel viewHeader">
+    <div class="c_title bg-info">
+        <h2><span class="font-bold">Modulos del Sistema</span> <small class="fg-white">Gestión de modulos</small></h2>
+        <div class="clearfix"></div>
+    </div>
+    <div id="actionsBar">
+        <a class="btn btn-success btn-flat btn-new" href="@Url.Action("New","Modules")">Nuevo</a>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div class="c_panel">
+
+    <div class="c_content">
+        <table class="datatable table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Chk</th>
+                    <th>Nombre</th>
+                    <th>Icono</th>
+                    <th>Orden</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var module in Model)
+                {
+                    <tr>
+                        <td align="center">@module.Id</td>
+                        <td align="center"><input type="radio" class="radioDtt" name="Id" value="@module.Id"/></td>
+                        
+                        <td>@module.Name</td>
+                        <td>@module.Icon</td>
+                        <td align="center">@module.Order</td>
+                        <td align="center" id="IsActive">
+                            @if (module.IsActive)
+                            {
+                                <span class="stsActive">Activo</span>
+                            }
+                            else
+                            {
+                                <span class="stsInactive">Inactivo</span>
+                            }
+                        </td>
+                    </tr>
+                }           
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+             $.ajax({
+                dataType: 'JSON',
+                type: 'GET',
+                url: "@Url.Action("GetJsonModules", "Modules")",
+                success: function (response) {
+                    console.log(response);
+                },
+                beforeSend: function () {
+
+                },
+                error: function (a, b, c) {
+
+                }
+            });
+        });
+    </script>
+}

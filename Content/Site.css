@@ -1,0 +1,108 @@
+﻿ul.sidebar-menu li a {
+    font-size: 14px !important;
+    border-bottom: 1px solid #f1f2f2 !important;
+}
+
+.dcjq-icon {
+    /*top: 12px !important;*/
+}
+
+.sidebar-toggle-box:hover {
+    background: #3a434d !important;
+}
+
+ul.sidebar-menu li a.active, ul.sidebar-menu li a:focus {
+    background-color: #fff;
+}
+
+ul.sidebar-menu li.sidebar-profile .image img {
+    border-radius: 0;
+}
+
+ul.sidebar-menu li.sidebar-profile .name {
+    font-size: 14px;
+}
+
+.renderBody {
+    background: white;
+    margin-top: 54px;
+    margin-left: -3px;
+    margin-right: -3px;
+    margin-bottom: 22px !important;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 11px;
+}
+
+.error-msg {
+    color: red;
+}
+
+.stsActive {
+    padding: 3px 5px;
+    background-color: #46A546;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-radius: 3px;
+}
+
+.stsInactive {
+    padding: 3px 5px;
+    background-color: #EA3838;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-radius: 3px;
+}
+
+#ajaxLoader {
+    display: none;
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.viewHeader {
+    background: white;
+    margin-top: 54px;
+    margin-left: -3px;
+    margin-right: -3px;
+    margin-bottom: 22px !important;
+}
+
+#actionsBar {
+    padding: 10px;
+}
+
+.c_content {
+    border-top: 2px solid #d9dada;
+}
+
+table.dataTable thead th, table.dataTable thead td, table.dataTable.no-footer {
+    border: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    background: none !important;
+    border: none !important;
+}
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border: 1px solid #ddd !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0 !important
+}
+
+.pagination {
+    margin: 0;
+    margin-top: 5px !important;
+}
+table.dataTable tbody tr.selected {
+    background-color: rgba(91, 192, 222, 0.32) !important;
+    font-weight: bold;
+}
+.c_title h2 {
+    white-space: normal !important;
+}
